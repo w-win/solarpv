@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Menu1</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'solarpvapp/style.css' %}" >
+</head>
+
+<body>
+	<header>
+		<h1 style=text-align:left> SOL POTENTIA </h1>
+
+		<div class="topright"> <a href="#">ABOUT US</a> | <a href="#">CONTACT US</a></div>
+		<div class="topbottomright"> <a href="#">LOGIN</a> | <a href="{% url 'Register' %}">REGISTER</a></div>
+		<hr>
+	</header>
+
+	
+	<nav>
+		<ul>
+			<li><a href="{% url 'Homepage' %}">Home</a></li>
+			<li><a href="#" class="active">Menu1</a></li>
+			<li><a href="#">Menu2</a></li>
+			<li><a href="#">Menu3</a></li>
+			
+		</ul>	
+	</nav>
+			<h1 style="text-align:left; padding-left:50px" >Menu1</h1>
+	
+
+
+
+
+	<p style="width: auto; padding:50px; margin: 20px;height:auto; border:5px solid black; text-align:left;">contents
+	 </p>
+	<footer> <p style="top:15px;">Copyright &copy; 2021 </p>
+	<div class="bottomleft"> <a href="#">SITE MAP</a> | <a href="#">PRIVACY POLICY</a></div>
+	</footer>
+</body>
+</html>
