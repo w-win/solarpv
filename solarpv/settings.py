@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'solarpvapp',
+    'backend',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -76,10 +77,20 @@ WSGI_APPLICATION = 'solarpv.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bakqlsck',
+        'HOST': 'fanny.db.elephantsql.com',
+        'USER':'bakqlsck',
+        'PASSWORD':'BEY0u_DpuDc6HjuNQKxsEl2k1ilqY3n5',
+        'PORT':'5432'
     }
 }
+#  DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
+#     }
+# }
 
 
 # Password validation
